@@ -1,0 +1,129 @@
+---
+import Layout from '../layouts/Layout.astro';
+---
+
+<Layout title="Über uns – Guidaro" description="Guidaro wurde von Grund auf für den deutschen Pflegemarkt entwickelt.">
+
+  <section class="page-hero dark-hero">
+    <div class="section-inner">
+      <span class="section-tag light-tag">Über Guidaro</span>
+      <h1 class="white-title">Gebaut von<br>Vertriebsprofis.</h1>
+      <p class="lead light-lead">Wir sind kein generisches Callcenter. Guidaro wurde von Grund auf für den deutschen Pflegemarkt entwickelt — mit Technologie, Expertise und echtem Engagement.</p>
+    </div>
+  </section>
+
+  <section class="story-section">
+    <div class="section-inner">
+      <div class="story-grid">
+        <div>
+          <span class="section-tag">Unsere Geschichte</span>
+          <h2>Warum Guidaro?</h2>
+          <p style="margin-bottom:16px;">Guidaro entstand aus einer einfachen Beobachtung: Der deutsche Pflegemarkt ist massiv unterversorgt — nicht weil Anbieter schlechte Produkte haben, sondern weil der Vertrieb fehlt.</p>
+          <p style="margin-bottom:16px;">Millionen Deutsche haben Anspruch auf Pflegebox oder Hausnotruf — und wissen es nicht. Bestehende Callcenter kennen die Branche nicht, behandeln sensible Themen wie Massenware und liefern keine nachhaltigen Ergebnisse.</p>
+          <p>Guidaro kombiniert KI-Effizienz mit menschlicher Empathie, proprietärer Technologie und tiefer Branchenkenntnis — für Ergebnisse, die klassische Callcenter nicht liefern können.</p>
+        </div>
+        <div class="werte-grid">
+          <div class="wert-card">
+            <div class="wert-icon">🎯</div>
+            <h4>Spezialisierung</h4>
+            <p>Nur Pflegebox und Hausnotruf — keine Ablenkung, maximale Tiefe.</p>
+          </div>
+          <div class="wert-card">
+            <div class="wert-icon">⚡</div>
+            <h4>Technologie</h4>
+            <p>Eigenentwickeltes CRM und KI-Stack — kein Lizenzprodukt von der Stange.</p>
+          </div>
+          <div class="wert-card">
+            <div class="wert-icon">🤝</div>
+            <h4>Partnerschaft</h4>
+            <p>Wir verdienen nur wenn Sie verdienen — echtes Alignment.</p>
+          </div>
+          <div class="wert-card">
+            <div class="wert-icon">📋</div>
+            <h4>Compliance</h4>
+            <p>DSGVO-konform, UWG-konform, vollständige Dokumentation.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="team-section dark-section">
+    <div class="section-inner">
+      <span class="section-tag light-tag">Das Team</span>
+      <h2 class="white-title">Menschen hinter Guidaro.</h2>
+      <div class="team-grid">
+        <div class="team-card">
+          <div class="team-avatar">AA</div>
+          <div>
+            <h4>Ahmed Abida</h4>
+            <p>Geschäftsführer & Co-Founder</p>
+            <span class="team-role">Business Development · Partner Relations · Operations</span>
+          </div>
+        </div>
+        <div class="team-card">
+          <div class="team-avatar" style="background:var(--accent-dark);">VT</div>
+          <div>
+            <h4>Vertriebsteam</h4>
+            <p>Geschulte Telefonberater</p>
+            <span class="team-role">Spezialisierung Pflegebox & Hausnotruf · Deutschland</span>
+          </div>
+        </div>
+        <div class="team-card">
+          <div class="team-avatar" style="background:#6366f1;">IT</div>
+          <div>
+            <h4>Tech & KI</h4>
+            <p>Entwickler & KI-Engineers</p>
+            <span class="team-role">Proprietäres CRM · KI-Sprachagenten · Cloud-Infrastruktur</span>
+          </div>
+        </div>
+      </div>
+
+      <div class="standorte-section">
+        <h3 class="white-title" style="font-size:18px; margin-bottom:20px;">Unsere Standorte</h3>
+        <div class="standorte">
+          <div class="standort-badge">📍 Deutschland — Vertrieb & Partner</div>
+          <div class="standort-badge">📍 Tunesien — Operations & Agents</div>
+          <div class="standort-badge">📍 USA — Technologie</div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="cta-section">
+    <div class="section-inner cta-inner">
+      <span class="section-tag">Nächster Schritt</span>
+      <h2>Werden Sie unser Partner.</h2>
+      <p class="lead">Erfahren Sie in einem unverbindlichen Gespräch, wie Guidaro Ihren Vertrieb konkret stärken kann.</p>
+      <a href="/kontakt" class="btn-primary" style="margin-top:28px; display:inline-flex;">Partnerschaft anfragen →</a>
+    </div>
+  </section>
+
+</Layout>
+
+<style>
+  .page-hero { padding: 140px 6vw 80px; }
+  .dark-hero { background: var(--navy); }
+  .section-inner { max-width: 1200px; margin: 0 auto; }
+  .light-tag { background: rgba(255,255,255,0.12); color: rgba(255,255,255,0.8); }
+  .white-title { color: white !important; }
+  .light-lead { color: rgba(255,255,255,0.7) !important; }
+  .story-section { background: white; }
+  .story-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 64px; align-items: start; }
+  .werte-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 16px; }
+  .wert-card { background: var(--gray-100); border-radius: var(--radius); padding: 20px; border: 1px solid var(--gray-200); }
+  .wert-icon { font-size: 24px; margin-bottom: 10px; }
+  .wert-card h4 { font-size: 15px; font-weight: 600; color: var(--navy); margin-bottom: 6px; }
+  .wert-card p { font-size: 13px; color: var(--gray-700); }
+  .dark-section { background: var(--navy); }
+  .team-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(280px, 1fr)); gap: 16px; margin-top: 40px; margin-bottom: 48px; }
+  .team-card { display: flex; gap: 16px; align-items: center; background: rgba(255,255,255,0.06); border: 1px solid rgba(255,255,255,0.1); border-radius: var(--radius); padding: 20px; }
+  .team-avatar { width: 52px; height: 52px; border-radius: 50%; background: var(--blue); display: flex; align-items: center; justify-content: center; font-family: var(--font-head); font-weight: 700; font-size: 16px; color: white; flex-shrink: 0; }
+  .team-card h4 { font-size: 15px; font-weight: 600; color: white; margin-bottom: 2px; }
+  .team-card p { font-size: 13px; color: rgba(255,255,255,0.6); margin-bottom: 4px; }
+  .team-role { font-size: 12px; color: rgba(255,255,255,0.4); }
+  .standorte { display: flex; gap: 12px; flex-wrap: wrap; }
+  .standort-badge { background: rgba(255,255,255,0.08); border: 1px solid rgba(255,255,255,0.15); border-radius: 40px; padding: 8px 16px; font-size: 13px; color: rgba(255,255,255,0.8); }
+  .cta-section { background: var(--blue-pale); }
+  @media (max-width: 900px) { .story-grid { grid-template-columns: 1fr; } }
+</style>

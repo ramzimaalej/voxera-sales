@@ -1,0 +1,44 @@
+<svg width="100%" viewBox="0 0 680 380" role="img" xmlns="http://www.w3.org/2000/svg">
+  <title>Pflegebox Illustration – Voxera</title>
+  <rect x="40" y="20" width="600" height="340" rx="20" fill="#F0FDF8"/>
+  <rect x="80" y="60" width="160" height="200" rx="16" fill="#1D9E75"/>
+  <rect x="95" y="80" width="130" height="90" rx="10" fill="#0F6E56"/>
+  <rect x="108" y="92" width="44" height="44" rx="8" fill="#1D9E75"/>
+  <rect x="120" y="104" width="20" height="4" rx="2" fill="white"/>
+  <rect x="128" y="100" width="4" height="12" rx="2" fill="white"/>
+  <rect x="162" y="92" width="52" height="20" rx="4" fill="#5DCAA5"/>
+  <rect x="162" y="118" width="52" height="20" rx="4" fill="#5DCAA5"/>
+  <rect x="162" y="144" width="38" height="20" rx="4" fill="#9FE1CB"/>
+  <rect x="104" y="185" width="112" height="6" rx="3" fill="rgba(255,255,255,0.3)"/>
+  <rect x="104" y="197" width="88" height="6" rx="3" fill="rgba(255,255,255,0.2)"/>
+  <rect x="95" y="214" width="130" height="32" rx="8" fill="#085041"/>
+  <text x="160" y="234" text-anchor="middle" fill="#9FE1CB" font-size="11" font-weight="700" font-family="sans-serif">§ 40 SGB XI</text>
+  <rect x="80" y="276" width="160" height="64" rx="12" fill="white"/>
+  <text x="160" y="299" text-anchor="middle" fill="#0F6E56" font-size="10" font-weight="700" font-family="sans-serif">Pflegebox Anspruch</text>
+  <text x="160" y="316" text-anchor="middle" fill="#4A5568" font-size="9" font-family="sans-serif">Monatlich kassenbezahlt</text>
+  <rect x="100" y="322" width="120" height="10" rx="5" fill="#E1F5EE"/>
+  <rect x="100" y="322" width="82" height="10" rx="5" fill="#1D9E75"/>
+  <rect x="270" y="60" width="370" height="260" rx="16" fill="white"/>
+  <rect x="270" y="60" width="370" height="5" rx="3" fill="#1D9E75"/>
+  <text x="455" y="95" text-anchor="middle" fill="#0B1F3A" font-size="13" font-weight="700" font-family="sans-serif">Voxera Prozess fuer Pflegebox</text>
+  <circle cx="310" cy="130" r="16" fill="#1D9E75"/>
+  <text x="310" y="135" text-anchor="middle" fill="white" font-size="12" font-weight="700" font-family="sans-serif">1</text>
+  <text x="336" y="126" fill="#0B1F3A" font-size="11" font-weight="600" font-family="sans-serif">Zielgruppe identifizieren</text>
+  <text x="336" y="140" fill="#4A5568" font-size="10" font-family="sans-serif">Pflegegrad 1-5 Haushalte</text>
+  <line x1="310" y1="146" x2="310" y2="162" stroke="#C7D8F5" stroke-width="2" stroke-dasharray="4,3"/>
+  <circle cx="310" cy="175" r="16" fill="#1756B8"/>
+  <text x="310" y="180" text-anchor="middle" fill="white" font-size="12" font-weight="700" font-family="sans-serif">2</text>
+  <text x="336" y="171" fill="#0B1F3A" font-size="11" font-weight="600" font-family="sans-serif">KI-Erstkontakt</text>
+  <text x="336" y="185" fill="#4A5568" font-size="10" font-family="sans-serif">Anspruch erklaeren, qualifizieren</text>
+  <line x1="310" y1="191" x2="310" y2="207" stroke="#C7D8F5" stroke-width="2" stroke-dasharray="4,3"/>
+  <circle cx="310" cy="220" r="16" fill="#1756B8"/>
+  <text x="310" y="225" text-anchor="middle" fill="white" font-size="12" font-weight="700" font-family="sans-serif">3</text>
+  <text x="336" y="216" fill="#0B1F3A" font-size="11" font-weight="600" font-family="sans-serif">Beratung und Antrag</text>
+  <text x="336" y="230" fill="#4A5568" font-size="10" font-family="sans-serif">Spezialist begleitet bis Abschluss</text>
+  <line x1="310" y1="236" x2="310" y2="252" stroke="#C7D8F5" stroke-width="2" stroke-dasharray="4,3"/>
+  <circle cx="310" cy="265" r="16" fill="#00C48C"/>
+  <text x="310" y="270" text-anchor="middle" fill="white" font-size="14" font-weight="700" font-family="sans-serif">&#10003;</text>
+  <text x="336" y="261" fill="#0B1F3A" font-size="11" font-weight="600" font-family="sans-serif">Genehmigung und Abschluss</text>
+  <text x="336" y="275" fill="#4A5568" font-size="10" font-family="sans-serif">Pflegekasse bestaetigt – Vertrag aktiv</text>
+  <text x="340" y="368" text-anchor="middle" fill="#0F6E56" font-size="10" font-weight="600" font-family="sans-serif">8 Millionen Berechtigte – weniger als 30% nutzen ihren Anspruch</text>
+</svg>

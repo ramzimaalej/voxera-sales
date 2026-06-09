@@ -1,0 +1,49 @@
+<svg width="100%" viewBox="0 0 680 420" role="img" xmlns="http://www.w3.org/2000/svg">
+  <title>Voxera Hero – KI und Mensch im Vertrieb</title>
+  <rect x="60" y="30" width="560" height="360" rx="20" fill="#EBF2FF"/>
+  <rect x="100" y="60" width="180" height="220" rx="14" fill="#1756B8"/>
+  <rect x="115" y="80" width="150" height="90" rx="8" fill="#0d3d8a"/>
+  <circle cx="190" cy="125" r="22" fill="#2E74D4"/>
+  <rect x="170" y="115" width="40" height="20" rx="4" fill="#1756B8"/>
+  <rect x="175" y="109" width="10" height="8" rx="2" fill="#2E74D4"/>
+  <rect x="205" y="109" width="10" height="8" rx="2" fill="#2E74D4"/>
+  <rect x="178" y="133" width="24" height="4" rx="2" fill="#60a5fa"/>
+  <rect x="125" y="182" width="130" height="7" rx="3" fill="rgba(255,255,255,0.25)"/>
+  <rect x="125" y="196" width="100" height="7" rx="3" fill="rgba(255,255,255,0.15)"/>
+  <rect x="125" y="210" width="115" height="7" rx="3" fill="rgba(255,255,255,0.15)"/>
+  <rect x="125" y="240" width="60" height="24" rx="6" fill="#00C48C"/>
+  <text x="155" y="257" text-anchor="middle" fill="white" font-size="11" font-weight="600" font-family="sans-serif">KI-Agent</text>
+  <line x1="280" y1="170" x2="340" y2="170" stroke="#1756B8" stroke-width="2" stroke-dasharray="6,4"/>
+  <polygon points="338,165 348,170 338,175" fill="#1756B8"/>
+  <rect x="348" y="80" width="60" height="60" rx="30" fill="#EBF2FF"/>
+  <circle cx="378" cy="100" r="14" fill="#2E74D4"/>
+  <ellipse cx="378" cy="128" rx="22" ry="14" fill="#2E74D4"/>
+  <rect x="348" y="155" width="60" height="7" rx="3" fill="#C7D8F5"/>
+  <rect x="355" y="167" width="46" height="7" rx="3" fill="#C7D8F5"/>
+  <circle cx="408" cy="85" r="8" fill="#00C48C"/>
+  <rect x="430" y="80" width="60" height="60" rx="30" fill="#EBF2FF"/>
+  <circle cx="460" cy="100" r="14" fill="#1756B8"/>
+  <ellipse cx="460" cy="128" rx="22" ry="14" fill="#1756B8"/>
+  <rect x="430" y="155" width="60" height="7" rx="3" fill="#C7D8F5"/>
+  <rect x="510" y="80" width="60" height="60" rx="30" fill="#EBF2FF"/>
+  <circle cx="540" cy="100" r="14" fill="#0B1F3A"/>
+  <ellipse cx="540" cy="128" rx="22" ry="14" fill="#0B1F3A"/>
+  <rect x="510" y="155" width="60" height="7" rx="3" fill="#C7D8F5"/>
+  <rect x="330" y="210" width="250" height="120" rx="12" fill="white"/>
+  <rect x="330" y="210" width="250" height="4" rx="2" fill="#1756B8"/>
+  <text x="455" y="237" text-anchor="middle" fill="#0B1F3A" font-size="11" font-weight="700" font-family="sans-serif">Sales Pipeline</text>
+  <rect x="348" y="248" width="180" height="12" rx="6" fill="#EBF2FF"/>
+  <rect x="348" y="248" width="140" height="12" rx="6" fill="#1756B8"/>
+  <text x="348" y="276" fill="#4A5568" font-size="10" font-family="sans-serif">Vertraege heute</text>
+  <text x="560" y="276" text-anchor="end" fill="#1756B8" font-size="13" font-weight="700" font-family="sans-serif">24</text>
+  <text x="348" y="294" fill="#4A5568" font-size="10" font-family="sans-serif">Genehmigungen</text>
+  <text x="560" y="294" text-anchor="end" fill="#00C48C" font-size="13" font-weight="700" font-family="sans-serif">18</text>
+  <text x="348" y="312" fill="#4A5568" font-size="10" font-family="sans-serif">Anrufe gesamt</text>
+  <text x="560" y="312" text-anchor="end" fill="#0B1F3A" font-size="13" font-weight="700" font-family="sans-serif">847</text>
+  <rect x="100" y="300" width="180" height="60" rx="10" fill="#0B1F3A"/>
+  <text x="190" y="322" text-anchor="middle" fill="rgba(255,255,255,0.6)" font-size="9" font-family="sans-serif">VOXERA CRM</text>
+  <rect x="118" y="332" width="50" height="18" rx="4" fill="#1756B8"/>
+  <text x="143" y="345" text-anchor="middle" fill="white" font-size="9" font-family="sans-serif">Pflegebox</text>
+  <rect x="176" y="332" width="50" height="18" rx="4" fill="#00A073"/>
+  <text x="201" y="345" text-anchor="middle" fill="white" font-size="9" font-family="sans-serif">Hausnotruf</text>
+</svg>

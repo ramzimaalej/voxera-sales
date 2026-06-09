@@ -1,0 +1,45 @@
+<svg width="100%" viewBox="0 0 680 380" role="img" xmlns="http://www.w3.org/2000/svg">
+  <title>Hausnotruf Illustration – Voxera</title>
+  <rect x="40" y="20" width="600" height="340" rx="20" fill="#EBF2FF"/>
+  <rect x="80" y="55" width="170" height="215" rx="16" fill="#1756B8"/>
+  <rect x="100" y="74" width="130" height="80" rx="10" fill="#0d3d8a"/>
+  <circle cx="165" cy="95" r="18" fill="#2E74D4"/>
+  <path d="M147 132 Q165 122 183 132" fill="#2E74D4"/>
+  <circle cx="165" cy="89" r="8" fill="#EBF2FF"/>
+  <rect x="110" y="164" width="46" height="46" rx="10" fill="#0d3d8a"/>
+  <circle cx="133" cy="182" r="8" fill="#2E74D4"/>
+  <rect x="127" y="193" width="12" height="3" rx="1" fill="#60a5fa"/>
+  <rect x="122" y="197" width="22" height="3" rx="1" fill="#60a5fa"/>
+  <rect x="164" y="164" width="46" height="46" rx="10" fill="#00C48C"/>
+  <text x="187" y="195" text-anchor="middle" fill="white" font-size="22" font-family="sans-serif" font-weight="300">!</text>
+  <rect x="100" y="222" width="130" height="34" rx="8" fill="#042C53"/>
+  <text x="165" y="242" text-anchor="middle" fill="#85B7EB" font-size="11" font-weight="700" font-family="sans-serif">§ 33 SGB XI</text>
+  <rect x="80" y="284" width="170" height="66" rx="12" fill="white"/>
+  <text x="165" y="305" text-anchor="middle" fill="#185FA5" font-size="10" font-weight="700" font-family="sans-serif">Hausnotruf-Anspruch</text>
+  <text x="165" y="320" text-anchor="middle" fill="#4A5568" font-size="9" font-family="sans-serif">Kassenbezahlt fuer Pflegebeduerftiger</text>
+  <rect x="100" y="328" width="130" height="10" rx="5" fill="#E6F1FB"/>
+  <rect x="100" y="328" width="92" height="10" rx="5" fill="#1756B8"/>
+  <rect x="270" y="55" width="370" height="260" rx="16" fill="white"/>
+  <rect x="270" y="55" width="370" height="5" rx="3" fill="#1756B8"/>
+  <text x="455" y="91" text-anchor="middle" fill="#0B1F3A" font-size="13" font-weight="700" font-family="sans-serif">Voxera Prozess fuer Hausnotruf</text>
+  <circle cx="310" cy="125" r="16" fill="#1756B8"/>
+  <text x="310" y="130" text-anchor="middle" fill="white" font-size="12" font-weight="700" font-family="sans-serif">1</text>
+  <text x="336" y="121" fill="#0B1F3A" font-size="11" font-weight="600" font-family="sans-serif">Angehoerige ansprechen</text>
+  <text x="336" y="135" fill="#4A5568" font-size="10" font-family="sans-serif">Kinder als Entscheider erreichen</text>
+  <line x1="310" y1="141" x2="310" y2="157" stroke="#C7D8F5" stroke-width="2" stroke-dasharray="4,3"/>
+  <circle cx="310" cy="170" r="16" fill="#1756B8"/>
+  <text x="310" y="175" text-anchor="middle" fill="white" font-size="12" font-weight="700" font-family="sans-serif">2</text>
+  <text x="336" y="166" fill="#0B1F3A" font-size="11" font-weight="600" font-family="sans-serif">Vertrauen aufbauen</text>
+  <text x="336" y="180" fill="#4A5568" font-size="10" font-family="sans-serif">Anspruch erklaeren, Bedarf klaeren</text>
+  <line x1="310" y1="186" x2="310" y2="202" stroke="#C7D8F5" stroke-width="2" stroke-dasharray="4,3"/>
+  <circle cx="310" cy="215" r="16" fill="#1756B8"/>
+  <text x="310" y="220" text-anchor="middle" fill="white" font-size="12" font-weight="700" font-family="sans-serif">3</text>
+  <text x="336" y="211" fill="#0B1F3A" font-size="11" font-weight="600" font-family="sans-serif">Produktberatung</text>
+  <text x="336" y="225" fill="#4A5568" font-size="10" font-family="sans-serif">Geraete, Service, Kostenuebernhame</text>
+  <line x1="310" y1="231" x2="310" y2="247" stroke="#C7D8F5" stroke-width="2" stroke-dasharray="4,3"/>
+  <circle cx="310" cy="260" r="16" fill="#00C48C"/>
+  <text x="310" y="265" text-anchor="middle" fill="white" font-size="14" font-weight="700" font-family="sans-serif">&#10003;</text>
+  <text x="336" y="256" fill="#0B1F3A" font-size="11" font-weight="600" font-family="sans-serif">Vertrag und Installation</text>
+  <text x="336" y="270" fill="#4A5568" font-size="10" font-family="sans-serif">Unterlagen fertig, Montage koordiniert</text>
+  <text x="340" y="376" text-anchor="middle" fill="#185FA5" font-size="10" font-weight="600" font-family="sans-serif">4 Millionen alleinlebende Senioren – wachsender Bedarf jedes Jahr</text>
+</svg>

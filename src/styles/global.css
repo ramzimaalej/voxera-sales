@@ -1,0 +1,99 @@
+@import url('https://fonts.googleapis.com/css2?family=Sora:wght@300;400;500;600;700&family=DM+Sans:ital,opsz,wght@0,9..40,300;0,9..40,400;0,9..40,500;1,9..40,300&display=swap');
+
+*, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+
+:root {
+  --navy: #0B1F3A;
+  --navy-mid: #1a3558;
+  --blue: #1756B8;
+  --blue-light: #2E74D4;
+  --blue-pale: #EBF2FF;
+  --accent: #00C48C;
+  --accent-dark: #00A073;
+  --gray-100: #F5F7FA;
+  --gray-200: #E8ECF2;
+  --gray-400: #9AA3B0;
+  --gray-700: #4A5568;
+  --white: #FFFFFF;
+  --font-head: 'Sora', sans-serif;
+  --font-body: 'DM Sans', sans-serif;
+  --radius: 12px;
+  --radius-lg: 20px;
+  --shadow: 0 4px 24px rgba(11,31,58,0.10);
+  --shadow-lg: 0 8px 48px rgba(11,31,58,0.14);
+}
+
+html { scroll-behavior: smooth; }
+body {
+  font-family: var(--font-body);
+  color: var(--navy);
+  background: var(--white);
+  line-height: 1.65;
+  font-size: 16px;
+}
+
+h1 { font-family: var(--font-head); font-size: clamp(36px, 5vw, 62px); font-weight: 700; line-height: 1.13; letter-spacing: -1.5px; color: var(--navy); }
+h2 { font-family: var(--font-head); font-size: clamp(28px, 3.5vw, 44px); font-weight: 700; line-height: 1.18; letter-spacing: -1px; color: var(--navy); margin-bottom: 16px; }
+h3 { font-family: var(--font-head); font-size: 20px; font-weight: 600; color: var(--navy); margin-bottom: 10px; }
+p { color: var(--gray-700); }
+
+.section-tag {
+  display: inline-block;
+  background: var(--blue-pale);
+  color: var(--blue);
+  font-size: 12px;
+  font-weight: 600;
+  letter-spacing: 1.2px;
+  text-transform: uppercase;
+  padding: 6px 14px;
+  border-radius: 40px;
+  margin-bottom: 20px;
+}
+
+.lead {
+  font-size: 18px;
+  line-height: 1.7;
+  color: var(--gray-700);
+  max-width: 580px;
+}
+
+.btn-primary {
+  background: var(--blue);
+  color: var(--white);
+  padding: 14px 28px;
+  border-radius: 10px;
+  font-size: 15px;
+  font-weight: 600;
+  text-decoration: none;
+  transition: all 0.2s;
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+}
+.btn-primary:hover {
+  background: var(--blue-light);
+  transform: translateY(-1px);
+  box-shadow: 0 8px 24px rgba(23,86,184,0.3);
+}
+
+.btn-secondary {
+  background: transparent;
+  color: var(--navy);
+  padding: 14px 28px;
+  border-radius: 10px;
+  font-size: 15px;
+  font-weight: 600;
+  text-decoration: none;
+  border: 1.5px solid var(--gray-200);
+  transition: all 0.2s;
+}
+.btn-secondary:hover {
+  border-color: var(--blue);
+  color: var(--blue);
+}
+
+section { padding: 96px 6vw; }
+
+@media (max-width: 900px) {
+  section { padding: 64px 5vw; }
+}

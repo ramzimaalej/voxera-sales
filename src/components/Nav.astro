@@ -1,0 +1,72 @@
+---
+const navLinks = [
+  { href: '/leistungen', label: 'Leistungen' },
+  { href: '/branchen', label: 'Branchen' },
+  { href: '/ueber-uns', label: 'Über uns' },
+  { href: '/kontakt', label: 'Kontakt' },
+];
+---
+
+<nav>
+  <a href="/" class="nav-logo">
+    <img src="/img/voxera-logo.svg" alt="Guidaro" height="36" style="vertical-align:middle; margin-right:8px;" />
+    Guidaro
+  </a>
+  <ul class="nav-links">
+    {navLinks.map(link => (
+      <li><a href={link.href}>{link.label}</a></li>
+    ))}
+  </ul>
+  <a href="/kontakt" class="nav-cta">Partnerschaft anfragen</a>
+  <button class="nav-burger" aria-label="Menü öffnen" id="burger">
+    <span></span><span></span><span></span>
+  </button>
+</nav>
+
+<style>
+  nav {
+    position: fixed; top: 0; left: 0; right: 0; z-index: 100;
+    background: rgba(255,255,255,0.96);
+    backdrop-filter: blur(12px);
+    border-bottom: 1px solid var(--gray-200);
+    display: flex; align-items: center; justify-content: space-between;
+    padding: 0 6vw; height: 68px;
+  }
+  .nav-logo {
+    font-family: var(--font-head); font-weight: 700; font-size: 22px;
+    color: var(--navy); text-decoration: none; letter-spacing: -0.5px;
+  }
+  .nav-logo span { color: var(--blue); }
+  .nav-links { display: flex; gap: 32px; list-style: none; }
+  .nav-links a {
+    font-size: 14px; font-weight: 500; color: var(--gray-700);
+    text-decoration: none; transition: color 0.2s;
+  }
+  .nav-links a:hover { color: var(--blue); }
+  .nav-cta {
+    background: var(--blue); color: var(--white); padding: 10px 22px;
+    border-radius: 8px; font-size: 14px; font-weight: 600;
+    text-decoration: none; transition: background 0.2s;
+  }
+  .nav-cta:hover { background: var(--blue-light); }
+  .nav-burger { display: none; flex-direction: column; gap: 5px; background: none; border: none; cursor: pointer; padding: 4px; }
+  .nav-burger span { display: block; width: 22px; height: 2px; background: var(--navy); border-radius: 2px; transition: all 0.2s; }
+
+  @media (max-width: 900px) {
+    .nav-links { display: none; }
+    .nav-burger { display: flex; }
+    .nav-links.open {
+      display: flex; flex-direction: column; gap: 0;
+      position: fixed; top: 68px; left: 0; right: 0;
+      background: var(--white); border-bottom: 1px solid var(--gray-200);
+      padding: 16px 6vw 24px;
+    }
+    .nav-links.open li a { display: block; padding: 12px 0; font-size: 16px; border-bottom: 1px solid var(--gray-100); }
+  }
+</style>
+
+<script>
+  const burger = document.getElementById('burger');
+  const links = document.querySelector('.nav-links');
+  burger?.addEventListener('click', () => links?.classList.toggle('open'));
+</script>
