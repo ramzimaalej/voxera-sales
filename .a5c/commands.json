@@ -1,0 +1,27 @@
+{
+  "$comment": "Repo-local command map for the Guidaro site (German-language DACH sales-consulting agency, package 'guidaro-sales'). Babysitter processes invoked from this CWD read this for quality gates and deploy.",
+  "dev": "npm run dev",
+  "build": "npm run build",
+  "preview": "npm run preview",
+  "previewPages": "npm run preview:pages",
+  "deploy": "npm run deploy",
+  "lint": "npm run lint",
+  "lintFix": "npm run lint:fix",
+  "typecheck": "npm run typecheck",
+  "test": null,
+  "qualityGate": {
+    "$comment": "Default gate for implement-feature.js / fix-bug.js on the Guidaro site. Site has no test runner; gate is lint + astro check (typecheck) + build.",
+    "commands": [
+      "npm run lint",
+      "npm run typecheck",
+      "npm run build"
+    ],
+    "passingScore": 90,
+    "firstTimeSetup": "npm install   # installs the Astro + ESLint + wrangler stack on first run"
+  },
+  "brandCheck": {
+    "$comment": "Optional copy-changes gate for the Guidaro site. Invoke the brand-voice-reviewer agent on changed German page/component copy against this repo's LOCAL brand (docs/brand/brand-guidelines.md) — Guidaro, NOT Voxera.",
+    "agent": "brand-voice-reviewer",
+    "scope": ["src/pages/**/*.astro", "src/components/**/*.astro"]
+  }
+}
