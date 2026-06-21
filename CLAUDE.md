@@ -22,7 +22,8 @@ Copy is German. Keep it German. There is no EN locale.
 Unlike the other code repos, Guidaro does **not** read its brand or strategy from a command/OS repo:
 
 - **Brand:** `docs/brand/brand-guidelines.md` — Guidaro's own brand (voice, palette, writing rules). It is the single source of truth for all copy and visual decisions on this site. It's currently a draft skeleton; flesh it out here, don't borrow from elsewhere.
-- **Specs:** feature and bug specs live locally under `features/` (`FEAT-xxx-<slug>.md`, `BUG-xxx-<slug>.md`). If a spec and the code disagree, the spec wins — fix the code or update the spec.
+- **Specs:** feature/bug specs live locally under `features/`, **folder-per-feature** (`features/FEAT-xxx-<slug>/spec.md`), with an anti-rot lifecycle (`_template/`, active `FEAT-xxx/`, `_archive/` for harvested DONE features — see `features/README.md`). If a spec and the code disagree, the spec wins.
+- **Engineering knowledge:** durable patterns + the lessons ledger live in `engineering-os/` (`patterns/`, `learning/lessons-log.md`) — the synthesis sink for `harvest-feature`.
 
 **Do not** reference the Voxera brand (`../voxera-os/docs/brand/`) or any Voxera product/strategy doc. If you need a fact about Guidaro that isn't written down yet, write it into `docs/brand/` (or a spec) — don't import it from a sibling brand.
 
@@ -31,11 +32,13 @@ Unlike the other code repos, Guidaro does **not** read its brand or strategy fro
 The engineering OS (processes + ADR registry) is shared and lives in **`../voxera-os/`**. Like every code repo in the workspace, Guidaro *invokes* those processes by relative path so the run + journal land in this repo:
 
 - Implement a feature:
-  `/babysitter:call --process ../voxera-os/.a5c/processes/implement-feature.js#process — spec features/FEAT-xxx-<slug>.md`
+  `/babysitter:call --process ../voxera-os/.a5c/processes/implement-feature.js#process — spec features/FEAT-xxx-<slug>/spec.md`
 - Fix a bug:
-  `/babysitter:call --process ../voxera-os/.a5c/processes/fix-bug.js#process — spec features/BUG-xxx-<slug>.md`
+  `/babysitter:call --process ../voxera-os/.a5c/processes/fix-bug.js#process — spec features/BUG-xxx-<slug>/spec.md`
+- Harvest a DONE feature (anti-rot):
+  `/babysitter:call --process ../voxera-os/.a5c/processes/harvest-feature.js#process — feature features/FEAT-xxx-<slug>`
 
-(You can also just say `/babysitter:call implement features/FEAT-xxx-<slug>.md` and let the skill pick the process.)
+(You can also just say `/babysitter:call implement features/FEAT-xxx-<slug>/spec.md` and let the skill pick the process.)
 
 Never copy a process into this repo — invoke the shared one. The processes are repo-agnostic and read this repo's quality gates from `.a5c/commands.json`.
 
@@ -74,4 +77,4 @@ Cloudflare Pages, via **wrangler**. Build + deploy: `npm run deploy` (`astro bui
 
 ## On completion
 
-When a run finishes it should: update the spec's `status` in `features/`, and — if a real site-engineering choice was made — open an ADR in `decisions/` (number from `../voxera-os/decisions/ADR-REGISTRY.md`). The shared `implement-feature.js` / `fix-bug.js` processes do this in their final phases. Run **brand-voice-reviewer** on any changed German copy before merging.
+When a run finishes it should: update the spec's `status` in `features/`, and — if a real site-engineering choice was made — open an ADR in `decisions/` (number from `../voxera-os/decisions/ADR-REGISTRY.md`). On DONE, run `harvest-feature` to synthesize durable knowledge into `engineering-os/` and archive the feature slimmed. The shared `implement-feature.js` / `fix-bug.js` processes do the status + ADR steps in their final phases. Run **brand-voice-reviewer** on any changed German copy before merging.
