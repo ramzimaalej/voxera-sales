@@ -33,3 +33,6 @@ pnpm-debug.log*
 **/.a5c/*-inputs.json
 **/.a5c/creds.env
 **/.a5c/creds.env.tmp.*
+
+# Cloudflare local cache
+.wrangler/

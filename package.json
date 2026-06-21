@@ -1,5 +1,5 @@
 {
-  "name": "voxera-sales",
+  "name": "guidaro-sales",
   "type": "module",
   "version": "0.0.1",
   "engines": {
@@ -14,20 +14,25 @@
     "deploy": "astro build && wrangler pages deploy dist",
     "lint": "eslint . --max-warnings=50",
     "lint:fix": "eslint . --fix",
-    "typecheck": "astro check"
+    "typecheck": "astro check",
+    "generate-types": "wrangler types"
   },
   "dependencies": {
+    "@astrojs/cloudflare": "^13.6.1",
     "astro": "^6.4.4"
   },
   "devDependencies": {
     "@cloudflare/workers-types": "^4.20260521.1",
-    "wrangler": "^4",
-    "eslint": "^9.0.0",
     "@eslint/js": "^9.0.0",
+    "astro-eslint-parser": "^1.2.0",
+    "eslint": "^9.0.0",
+    "eslint-plugin-astro": "^1.3.0",
+    "eslint-plugin-jsx-a11y": "^6.10.0",
     "typescript": "^5.6.0",
     "typescript-eslint": "^8.0.0",
-    "eslint-plugin-astro": "^1.3.0",
-    "astro-eslint-parser": "^1.2.0",
-    "eslint-plugin-jsx-a11y": "^6.10.0"
+    "wrangler": "^4.98.0"
+  },
+  "overrides": {
+    "vite": "^7"
   }
 }
