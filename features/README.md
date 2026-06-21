@@ -14,7 +14,7 @@ The lifecycle below keeps this tree from becoming a bag of files.
 ## Lifecycle (anti-rot)
 
 1. Copy `_template/` → `features/FEAT-NNN-slug/`; write `spec.md` (acceptance criteria, scope). Keep copy German.
-2. Build via `implement-feature` / fix via `fix-bug` (from `../voxera-os/.a5c/processes/`).
+2. Build via `build-feature` / fix via `fix-bug` (from `../voxera-os/.a5c/processes/`).
 3. **On DONE, harvest:** run the shared anti-rot process so durable knowledge moves UP and the folder is archived slimmed:
    ```sh
    /babysitter:call --process ../voxera-os/.a5c/processes/harvest-feature.js#process -- feature features/FEAT-NNN-slug

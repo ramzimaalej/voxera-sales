@@ -10,7 +10,7 @@
   "typecheck": "npm run typecheck",
   "test": null,
   "qualityGate": {
-    "$comment": "Default gate for implement-feature.js / fix-bug.js on the Guidaro site. Site has no test runner; gate is lint + astro check (typecheck) + build.",
+    "$comment": "Default gate for build-feature.js / fix-bug.js on the Guidaro site. Site has no test runner; gate is lint + astro check (typecheck) + build.",
     "commands": [
       "npm run lint",
       "npm run typecheck",

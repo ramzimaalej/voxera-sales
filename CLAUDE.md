@@ -32,7 +32,7 @@ Unlike the other code repos, Guidaro does **not** read its brand or strategy fro
 The engineering OS (processes + ADR registry) is shared and lives in **`../voxera-os/`**. Like every code repo in the workspace, Guidaro *invokes* those processes by relative path so the run + journal land in this repo:
 
 - Implement a feature:
-  `/babysitter:call --process ../voxera-os/.a5c/processes/implement-feature.js#process — spec features/FEAT-xxx-<slug>/spec.md`
+  `/babysitter:call --process ../voxera-os/.a5c/processes/build-feature.js#process — spec features/FEAT-xxx-<slug>/spec.md`
 - Fix a bug:
   `/babysitter:call --process ../voxera-os/.a5c/processes/fix-bug.js#process — spec features/BUG-xxx-<slug>/spec.md`
 - Harvest a DONE feature (anti-rot):
@@ -77,4 +77,4 @@ Cloudflare Pages, via **wrangler**. Build + deploy: `npm run deploy` (`astro bui
 
 ## On completion
 
-When a run finishes it should: update the spec's `status` in `features/`, and — if a real site-engineering choice was made — open an ADR in `decisions/` (number from `../voxera-os/decisions/ADR-REGISTRY.md`). On DONE, run `harvest-feature` to synthesize durable knowledge into `engineering-os/` and archive the feature slimmed. The shared `implement-feature.js` / `fix-bug.js` processes do the status + ADR steps in their final phases. Run **brand-voice-reviewer** on any changed German copy before merging.
+When a run finishes it should: update the spec's `status` in `features/`, and — if a real site-engineering choice was made — open an ADR in `decisions/` (number from `../voxera-os/decisions/ADR-REGISTRY.md`). On DONE, run `harvest-feature` to synthesize durable knowledge into `engineering-os/` and archive the feature slimmed. The shared `build-feature.js` / `fix-bug.js` processes do the status + ADR steps in their final phases. Run **brand-voice-reviewer** on any changed German copy before merging.

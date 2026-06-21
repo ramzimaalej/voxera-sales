@@ -21,7 +21,7 @@ Built with **Astro** (static-first), deployed to **Cloudflare Pages** via the `@
 ## Governance
 
 - **Engineering processes** are invoked from the shared OS by relative path, never copied:
-  `/babysitter:call --process ../voxera-os/.a5c/processes/implement-feature.js#process implement features/FEAT-xxx-*.md`
+  `/babysitter:call --process ../voxera-os/.a5c/processes/build-feature.js#process implement features/FEAT-xxx-*.md`
 - **Decisions** that constrain this site get an ADR in `decisions/`, numbered from the shared registry.
 - **Brand** lives here locally (`docs/brand/`) — it is Guidaro's, and is intentionally separate from `voxera-os/docs/brand/`.
 

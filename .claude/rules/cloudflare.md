@@ -21,7 +21,7 @@ This site runs on the **`@astrojs/cloudflare` adapter** (`astro.config.mjs` → 
 - Local preview: `npm run preview:pages` (builds + runs `wrangler pages dev`).
 - Manual deploy: `npm run deploy` (builds + `wrangler pages deploy dist`).
 - Preview deploys on PRs: enabled in Cloudflare dashboard; each push to a branch creates a preview URL. Use these to validate before merge.
-- Babysitter `breakpointTolerance.alwaysBreakOn` includes `deploy` — the implement-feature process will pause before invoking `deploy`.
+- Babysitter `breakpointTolerance.alwaysBreakOn` includes `deploy` — the build-feature process will pause before invoking `deploy`.
 
 ## Endpoint discipline
 - **Validate input.** Every endpoint: validate the request shape (method, content-type, body schema). Return 400 with a clear error on bad input.
