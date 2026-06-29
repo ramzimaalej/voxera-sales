@@ -29,14 +29,20 @@ Unlike the other code repos, Guidaro does **not** read its brand or strategy fro
 
 ## Working with babysitter
 
-The engineering OS (processes + ADR registry) is shared and lives in **`../voxera-os/`**. Like every code repo in the workspace, Guidaro *invokes* those processes by relative path so the run + journal land in this repo:
+The engineering OS (processes + ADR registry) is shared and lives in **`../voxera-os/`**. Like every code repo in the workspace, Guidaro *invokes* those processes by relative path so the run + journal land in this repo. The work-type taxonomy is **design-feature → build-feature · improve-feature · fix-bug · pay-down-debt** (+ supporting `harvest-feature`); pick the verb that matches the work:
 
-- Implement a feature:
-  `/babysitter:call --process ../voxera-os/.a5c/processes/build-feature.js#process — spec features/FEAT-xxx-<slug>/spec.md`
-- Fix a bug:
-  `/babysitter:call --process ../voxera-os/.a5c/processes/fix-bug.js#process — spec features/BUG-xxx-<slug>/spec.md`
+- Design a feature (research + propose the UX, upstream of build):
+  `/babysitter:call --process ../voxera-os/.a5c/processes/design-feature.js#process -- request "<what you want>"`
+- Implement a feature (build an approved spec):
+  `/babysitter:call --process ../voxera-os/.a5c/processes/build-feature.js#process -- spec features/FEAT-xxx-<slug>/spec.md`
+- Improve a shipped feature (extend/polish, existing behavior preserved):
+  `/babysitter:call --process ../voxera-os/.a5c/processes/improve-feature.js#process -- feature features/FEAT-xxx-<slug> change "<what to extend/polish>"`
+- Fix a bug (test-first):
+  `/babysitter:call --process ../voxera-os/.a5c/processes/fix-bug.js#process -- spec features/BUG-xxx-<slug>/spec.md`
+- Pay down debt (internal cleanup, no user-visible change):
+  `/babysitter:call --process ../voxera-os/.a5c/processes/pay-down-debt.js#process -- target <TD-### | path/to/code>`
 - Harvest a DONE feature (anti-rot):
-  `/babysitter:call --process ../voxera-os/.a5c/processes/harvest-feature.js#process — feature features/FEAT-xxx-<slug>`
+  `/babysitter:call --process ../voxera-os/.a5c/processes/harvest-feature.js#process -- feature features/FEAT-xxx-<slug>`
 
 (You can also just say `/babysitter:call implement features/FEAT-xxx-<slug>/spec.md` and let the skill pick the process.)
 
